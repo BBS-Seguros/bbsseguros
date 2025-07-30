@@ -97,7 +97,13 @@ nav ul li a:hover {
 .hero-text {
   flex: 1;
   color: #0a2f5a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
 }
+
 
 .hero-form {
   flex: 1;
