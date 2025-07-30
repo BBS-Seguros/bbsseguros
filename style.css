@@ -1,73 +1,108 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #0A2F5A;
-  color: white;
+  background-color: #ffffff;
+  color: #0a2f5a;
 }
 
 header {
-  background-color: white;
+  background-color: #f4f4f4;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
 }
 
-header img {
-  height: 60px;
+header h1 {
+  color: #0a2f5a;
 }
 
-header nav a {
-  margin: 0 15px;
-  color: #0A2F5A;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav ul li a {
   text-decoration: none;
-  font-weight: bold;
+  color: #0a2f5a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a6a6a6;
 }
 
 .hero-banner {
-  background: url('assets/maos-no-volante-ao-dirigir-em-alta-velocidade-de-dentro-carro.jpg') no-repeat center center/cover;
-  height: 300px;
+  position: relative;
+  background-image: url("maos-no-volante-ao-dirigir-em-alta-velocidade-de-dentro-carro.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
   text-align: center;
 }
 
-.hero-banner .content {
-  background-color: rgba(10, 47, 90, 0.8);
-  padding: 20px;
-  border-radius: 8px;
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 47, 90, 0.75);
 }
 
-.gray-btn {
-  background-color: #A6A6A6;
-  color: #0A2F5A;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.hero-banner .content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-banner p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-banner a {
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
 }
 
 .hero {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px;
-  background-color: #D1D1D1;
-  color: #0A2F5A;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  gap: 2rem;
 }
 
 .hero-text {
   flex: 1;
-  padding-right: 20px;
+  color: #0a2f5a;
 }
 
 .hero-form {
   flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  background-color: #a6a6a6;
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 .hero-form form {
@@ -76,64 +111,80 @@ header nav a {
 }
 
 .hero-form label {
-  margin-top: 10px;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
   font-weight: bold;
 }
 
-.hero-form input, .hero-form select {
-  padding: 8px;
-  margin-top: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.hero-form input,
+.hero-form select {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
 }
 
 .hero-form button {
-  margin-top: 15px;
-  background-color: #0A2F5A;
-  color: white;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: #0a2f5a;
+  color: #fff;
   border: none;
-  padding: 12px;
-  text-transform: uppercase;
+  border-radius: 8px;
   font-weight: bold;
-  border-radius: 5px;
   cursor: pointer;
 }
 
-.bbs-benefits, .testimonials {
-  padding: 40px 30px;
+.benefits,
+.bbs-benefits,
+.testimonials {
+  padding: 3rem 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
-.bbs-benefits h2, .testimonials h2 {
-  color: #FF7F50;
-  margin-bottom: 20px;
+.benefits {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.benefit-card {
+  width: 150px;
+}
+
+.benefit-card img {
+  width: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.bbs-benefits h2 {
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 1rem;
 }
 
 .bbs-benefits ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
 .bbs-benefits li {
-  background-color: #005B56;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
-.testimonials {
-  background-color: #0A2F5A;
+.testimonials h2 {
+  font-family: 'DM Serif Display', serif;
+  margin-bottom: 2rem;
 }
 
 .testimonial {
-  background-color: #005B56;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-left: 4px solid #0a2f5a;
+  margin-bottom: 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.testimonial strong {
-  display: block;
-  margin-top: 10px;
-  color: #FF7F50;
-}
 
