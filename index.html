@@ -182,49 +182,52 @@
         <a class="button-cinza" href="https://wa.me/5511914833514" target="_blank">Faça sua cotação</a>
     </section>
 
-    <section class="hero">
-  <div class="hero-text">
-    <div class="text-center-wrap">
+  <section class="hero">
+  <div class="hero-container">
+    <div class="hero-form">
+      <form>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+
+        <label for="placa">Placa do veículo:</label>
+        <input type="text" id="placa" name="placa" required>
+
+        <label for="garagem-residencia">Na residência, o veículo é guardado em:</label>
+        <select id="garagem-residencia" name="garagem-residencia" required>
+          <option value="">Selecione</option>
+          <option value="garagem">Garagem na residência</option>
+          <option value="rua">Na rua</option>
+        </select>
+
+        <label for="faculdade">Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
+        <select id="faculdade" name="faculdade" required>
+          <option value="">Selecione</option>
+          <option value="nao-utilizo">Não utilizo para ir para faculdade / colégio</option>
+          <option value="estacionamento">Sim, deixo em estacionamento</option>
+          <option value="rua">Não, deixo na rua</option>
+        </select>
+
+        <label for="trabalho">No trabalho, o veículo é guardado em estacionamento?</label>
+        <select id="trabalho" name="trabalho" required>
+          <option value="">Selecione</option>
+          <option value="nao-utilizo">Não utilizo para ir trabalhar</option>
+          <option value="estacionamento">Sim, deixo em estacionamento</option>
+          <option value="rua">Não, deixo na rua</option>
+        </select>
+
+        <button type="submit">Fazer Cotação</button>
+      </form>
+    </div>
+
+    <div class="hero-text">
       <h2>Segurança e proteção para seu veículo</h2>
       <p>
         Receba uma cotação personalizada em poucos minutos. <br>
         Preencha o formulário ao lado e entraremos em contato com você!
       </p>
     </div>
-        <div class="hero-form">
-            <form>
-                <label>CPF:</label>
-                <input type="text" name="cpf" required>
-
-                <label>Placa do veículo:</label>
-                <input type="text" name="placa" required>
-
-                <label>Na residência, o veículo é guardado em:</label>
-                <select required>
-                    <option>Garagem na residência</option>
-                    <option>Garagem condomínio fechado</option>
-                    <option>Estacionamento</option>
-                    <option>Nem em garagem nem em estacionamento</option>
-                </select>
-
-                <label>Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
-                <select required>
-                    <option>Não utilizo para ir para faculdade / colégio</option>
-                    <option>Utilizo e guardo em estacionamento</option>
-                    <option>Utilizo, mas não guardo em estacionamento</option>
-                </select>
-
-                <label>No trabalho, o veículo é guardado em estacionamento?</label>
-                <select required>
-                    <option>Não utilizo para ir trabalhar</option>
-                    <option>Utilizo e guardo em estacionamento / garagem</option>
-                    <option>Utilizo, mas não guardo em estacionamento / garagem</option>
-                </select>
-
-                <button type="submit">Fazer Cotação</button>
-            </form>
-        </div>
-    </section>
+  </div>
+</section>
 
     <section class="benefits" id="beneficios">
         <div class="benefit-card">
