@@ -1,0 +1,89 @@
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0a2f5a;
+    color: #f4f4f4;
+}
+header {
+    background-color: #0a2f5a;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 600;
+}
+.hero .banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+.cotacao-section {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+.cotacao-box {
+    background-color: #a6a6a6;
+    padding: 30px;
+    border-radius: 8px;
+    color: #0a2f5a;
+    width: 100%;
+    max-width: 500px;
+}
+.cotacao-box input, .cotacao-box select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+.cotacao-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a2f5a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gray-section {
+    background-color: #a6a6a6;
+    color: #0a2f5a;
+    padding: 40px 20px;
+}
+.benefits-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.dual-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+.left-box, .right-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a2f5a;
+    font-size: 14px;
+}

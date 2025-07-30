@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BBS Corretora</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="logo.png.png" alt="Logo BBS Corretora" class="logo" />
+        <nav>
+            <ul>
+                <li><a href="#cotacao">Cotação</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#assistencia">Assistência 24h</a></li>
+                <li><a href="#sobre">Sobre a BBS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="maos-no-volante.jpg" alt="Banner Direção" class="banner">
+    </section>
+
+    <section id="cotacao" class="cotacao-section">
+        <div class="cotacao-box">
+            <h2>Faça sua Cotação</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required />
+
+                <label for="veiculo">Tipo de Veículo:</label>
+                <select id="veiculo" name="veiculo">
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="caminhao">Caminhão</option>
+                </select>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required />
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="assistencia" class="gray-section">
+        <h2>Benefícios da Assistência 24h</h2>
+        <ul class="benefits-list">
+            <li>🚗 Guincho 24h</li>
+            <li>🔑 Chaveiro</li>
+            <li>🛞 Troca de Pneu</li>
+            <li>🏠 Transporte Domiciliar</li>
+            <li>⚡ Pane elétrica ou mecânica</li>
+        </ul>
+    </section>
+
+    <section id="sobre" class="dual-section">
+        <div class="left-box">
+            <h2>Sobre a BBS Corretora</h2>
+            <p>Mais que uma corretora, somos sua parceira na estrada! Garantimos segurança, transparência e atendimento personalizado.</p>
+        </div>
+        <div class="right-box">
+            <h3>Por que escolher a BBS?</h3>
+            <ul>
+                <li>✅ Atendimento humanizado</li>
+                <li>✅ Parcelamento facilitado</li>
+                <li>✅ Especialistas em veículos de alto risco</li>
+                <li>✅ Corretora autorizada Suhai e Ituran</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>BBS Corretora &copy; 2025 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
