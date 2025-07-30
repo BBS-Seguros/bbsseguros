@@ -1,99 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>BBS Corretora</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BBS Corretora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0A2F5A; /* Azul escuro em todo o site */
+      color: white;
+    }
+    header {
+      background-color: white; /* Seção 1 em branco */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+    header img {
+      height: 60px;
+    }
+    header nav a {
+      margin: 0 15px;
+      color: #0A2F5A;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero-banner {
+      background: url('assets/maos-no-volante-ao-dirigir-em-alta-velocidade-de-dentro-carro.jpg') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero-banner .content {
+      background-color: rgba(10, 47, 90, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .gray-btn {
+      background-color: #A6A6A6;
+      color: #0A2F5A;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+      background-color: #D1D1D1;
+      color: #0A2F5A;
+    }
+    .hero-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+    .hero-form {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .hero-form form {
+      display: flex;
+      flex-direction: column;
+    }
+    .hero-form label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .hero-form input, .hero-form select {
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .hero-form button {
+      margin-top: 15px;
+      background-color: #0A2F5A;
+      color: white;
+      border: none;
+      padding: 12px;
+      text-transform: uppercase;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .bbs-benefits, .testimonials {
+      padding: 40px 30px;
+    }
+    .bbs-benefits h2, .testimonials h2 {
+      color: #FF7F50;
+      margin-bottom: 20px;
+    }
+    .bbs-benefits ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .bbs-benefits li {
+      background-color: #005B56;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .testimonials {
+      background-color: #0A2F5A;
+    }
+    .testimonial {
+      background-color: #005B56;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      color: #FF7F50;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <img src="assets/logo.png" alt="BBS Corretora" style="height: 60px;">
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#beneficios">Benefícios</a>
-            <a href="#cotacao">Faça sua Cotação</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
+  <header>
+    <img src="assets/logo.png" alt="BBS Corretora">
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#coberturas">Coberturas</a>
+      <a href="#assistencia">Assistência</a>
+      <a href="#cotacao">Cotação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <section class="hero-banner" id="inicio">
-        <div class="content">
-            <h2>Segurança e proteção para o seu veículo começa aqui</h2>
-            <p>Somos a BBS Corretora — especializada em seguros para carros, motos e caminhões.</p>
-            <a href="https://wa.me/5511914833514" target="_blank">Faça sua cotação</a>
-        </div>
-    </section>
+  <section class="hero-banner" id="inicio">
+    <div class="content">
+      <h2>Segurança e proteção para o seu veículo começa aqui</h2>
+      <p>Somos a BBS Corretora — especializada em seguros para carros, motos e caminhões.</p>
+      <a href="https://wa.me/5511914833514" target="_blank" class="gray-btn">Faça sua cotação</a>
+    </div>
+  </section>
 
-    <section class="hero" id="cotacao">
-        <div class="hero-text">
-            <h1>Segurança e proteção para seu veículo</h1>
-            <p>Receba uma cotação personalizada em poucos minutos. Preencha o formulário ao lado e entraremos em contato com você!</p>
-        </div>
-        <div class="hero-form">
-            <form>
-                <label>CPF:</label>
-                <input type="text" name="cpf" required>
+  <section class="hero" id="cotacao">
+    <div class="hero-text">
+      <h1>Segurança e proteção para seu veículo</h1>
+      <p>Receba uma cotação personalizada em poucos minutos. Preencha o formulário ao lado e entraremos em contato com você!</p>
+    </div>
+    <div class="hero-form">
+      <form>
+        <label>CPF:</label>
+        <input type="text" name="cpf" required>
 
-                <label>Placa do veículo:</label>
-                <input type="text" name="placa" required>
+        <label>Placa do veículo:</label>
+        <input type="text" name="placa" required>
 
-                <label>Na residência, o veículo é guardado em:</label>
-                <select required>
-                    <option>Garagem na residência</option>
-                    <option>Garagem condomínio fechado</option>
-                    <option>Estacionamento</option>
-                    <option>Nem em garagem nem em estacionamento</option>
-                </select>
+        <label>Na residência, o veículo é guardado em:</label>
+        <select required>
+          <option>Garagem na residência</option>
+          <option>Garagem condomínio fechado</option>
+          <option>Estacionamento</option>
+          <option>Nem em garagem nem em estacionamento</option>
+        </select>
 
-                <label>Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
-                <select required>
-                    <option>Não utilizo para ir para faculdade / colégio</option>
-                    <option>Utilizo e guardo em estacionamento</option>
-                    <option>Utilizo, mas não guardo em estacionamento</option>
-                </select>
+        <label>Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
+        <select required>
+          <option>Não utilizo para ir para faculdade / colégio</option>
+          <option>Utilizo e guardo em estacionamento</option>
+          <option>Utilizo, mas não guardo em estacionamento</option>
+        </select>
 
-                <label>No trabalho, o veículo é guardado em estacionamento?</label>
-                <select required>
-                    <option>Não utilizo para ir trabalhar</option>
-                    <option>Utilizo e guardo em estacionamento / garagem</option>
-                    <option>Utilizo, mas não guardo em estacionamento / garagem</option>
-                </select>
+        <label>No trabalho, o veículo é guardado em estacionamento?</label>
+        <select required>
+          <option>Não utilizo para ir trabalhar</option>
+          <option>Utilizo e guardo em estacionamento / garagem</option>
+          <option>Utilizo, mas não guardo em estacionamento / garagem</option>
+        </select>
 
-                <button type="submit">Fazer Cotação</button>
-            </form>
-        </div>
-    </section>
+        <button type="submit">Fazer Cotação</button>
+      </form>
+    </div>
+  </section>
 
-    <section class="benefits" id="beneficios">
-        <div class="benefit-card">
-            <img src="assets/icone-guincho.png" alt="Guincho">
-            <p>Guincho 24h</p>
-        </div>
-        <div class="benefit-card">
-            <img src="assets/icone-pneu.png" alt="Troca de pneu">
-            <p>Troca de Pneus</p>
-        </div>
-        <div class="benefit-card">
-            <img src="assets/icone-chaveiro.png" alt="Chaveiro">
-            <p>Chaveiro</p>
-        </div>
-        <div class="benefit-card">
-            <img src="assets/icone-transporte.png" alt="Transporte domiciliar">
-            <p>Transporte domiciliar</p>
-        </div>
-    </section>
+  <section class="bbs-benefits" id="coberturas">
+    <h2>Nossas Coberturas</h2>
+    <ul>
+      <li><strong>Cobertura 1:</strong> Roubo e Furto</li>
+      <li><strong>Cobertura 2:</strong> Roubo e Furto + Perda Total</li>
+      <li><strong>Cobertura 3:</strong> Roubo e Furto + Perda Total + Terceiros</li>
+      <li><strong>Cobertura 4:</strong> Roubo e Furto + Terceiros</li>
+      <li><strong>Cobertura 5:</strong> Terceiros - RCF</li>
+    </ul>
+  </section>
 
-    <section class="bbs-benefits">
-        <h2>Por que escolher a BBS?</h2>
-        <ul>
-            <li>Atendimento rápido e personalizado</li>
-            <li>Parceria com seguradoras confiáveis</li>
-            <li>Pagamento facilitado</li>
-            <li>Consultoria gratuita</li>
-        </ul>
+  <section class="bbs-benefits" id="assistencia">
+    <h2>Assistência 24h</h2>
+    <p>E você ainda pode contar com a Assistência 24 horas em qualquer uma das opções de cobertura que você escolher.<br>
+    Com a assistência você terá com quem contar durante os imprevistos.</p>
+    <ul>
+      <li>Guincho até 200 KM</li>
+      <li>Troca de Pneus</li>
+      <li>Chaveiro 24h</li>
+      <li>Transporte Domiciliar</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="testimonial">“Contratei com a BBS e fui muito bem atendido! Recomendo.”<br><strong>— João M.</strong></div>
+    <div class="testimonial">“Seguro rápido, barato e com ótimo atendimento!”<br><strong>— Maria R.</strong></div>
+    <div class="testimonial">“Precisei de ajuda na estrada e a assistência foi excelente!”<br><strong>— Carlos T.</strong></div>
+  </section>
+
+</body>
+</html>
+
     </section>
 
 </body>
