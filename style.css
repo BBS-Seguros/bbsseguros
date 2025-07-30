@@ -103,6 +103,9 @@ nav ul li a:hover {
   text-align: center;
   padding: 1rem;
 }
+.text-center-wrap {
+  max-width: 500px;
+}
 
 
 .hero-form {
