@@ -204,43 +204,51 @@
     </section>
 
     <section class="hero" id="cotacao">
+        <div class="hero-text">
+            <h1 style="font-family: 'DM Serif Display', serif;">Segurança e proteção para seu veículo é aqui!</h1>
+            <p>Receba uma cotação personalizada. Preencha o formulário ao lado e entraremos em contato com você!</p>
+       
         <div class="hero-form">
   <form id="cotacaoForm" action="https://formsubmit.co/bbscorretora01@gmail.com" method="POST">
     <!-- Impede redirecionamento e reCAPTCHA -->
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_next" value="#">
-
-    <label>CPF:</label>
-    <input type="text" name="cpf" required>
-
-    <label>Placa do veículo:</label>
-    <input type="text" name="placa" required>
-
-    <label>Na residência, o veículo é guardado em:</label>
-    <select name="residencia" required>
-      <option value="Garagem na residência">Garagem na residência</option>
-      <option value="Garagem condomínio fechado">Garagem condomínio fechado</option>
-      <option value="Estacionamento">Estacionamento</option>
-      <option value="Nem em garagem nem em estacionamento">Nem em garagem nem em estacionamento</option>
-    </select>
-
-    <label>Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
-    <select name="faculdade" required>
-      <option value="Não utilizo para ir para faculdade / colégio">Não utilizo para ir para faculdade / colégio</option>
-      <option value="Utilizo e guardo em estacionamento">Utilizo e guardo em estacionamento</option>
-      <option value="Utilizo, mas não guardo em estacionamento">Utilizo, mas não guardo em estacionamento</option>
-    </select>
-
-    <label>No trabalho, o veículo é guardado em estacionamento?</label>
-    <select name="trabalho" required>
-      <option value="Não utilizo para ir trabalhar">Não utilizo para ir trabalhar</option>
-      <option value="Utilizo e guardo em estacionamento / garagem">Utilizo e guardo em estacionamento / garagem</option>
-      <option value="Utilizo, mas não guardo em estacionamento / garagem">Utilizo, mas não guardo em estacionamento / garagem</option>
-    </select>
-
-    <button type="submit">Fazer Cotação</button>
-  </form>
-
+        </div>
+        <div class="hero-form">
+            <form>
+                <label>CPF:</label>
+                <input type="text" name="cpf" required>
+                <label>Placa do veículo:</label>
+                <input type="text" name="placa" required>
+                <label>Na residência, o veículo é guardado em:</label>
+                <select required>
+                    <option>Garagem na residência</option>
+                    <option>Garagem condomínio fechado</option>
+                    <option>Estacionamento</option>
+                    <option>Nem em garagem nem em estacionamento</option>
+                </select>
+                <label>Na faculdade / colégio, o veículo é guardado em estacionamento?</label>
+                <select required>
+                    <option>Não utilizo para ir para faculdade / colégio</option>
+                    <option>Utilizo e guardo em estacionamento</option>
+                    <option>Utilizo, mas não guardo em estacionamento</option>
+                </select>
+                <label>No trabalho, o veículo é guardado em estacionamento?</label>
+                <select required>
+                    <option>Não utilizo para ir trabalhar</option>
+                    <option>Utilizo e guardo em estacionamento / garagem</option>
+                    <option>Utilizo, mas não guardo em estacionamento / garagem</option>
+                </select>
+                <button type="submit">Fazer Cotação</button>
+            </form>
+        </div>
+    </section>
+    <section class="hero-section" id="inicio">
+        <h1>Segurança e proteção para o seu veículo começa aqui.</h1>
+        <p>Somos a BBS Seguros— especializada em seguros para carros, motos e caminhões.</p>
+        <a class="button" href="#cotacao">Faça sua cotação</a>
+    </section>
+    
   <!-- Mensagem de sucesso -->
   <div id="mensagemSucesso" style="display:none; margin-top: 20px; color: green; font-weight: bold;">
     ✔️ Cotação enviada com sucesso! Entraremos em contato em breve.
