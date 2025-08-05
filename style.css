@@ -79,44 +79,34 @@ form input, form button {
 .coluna {
     flex: 1;
 }
-.depoimentos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+.testimonials {
+  text-align: center;
+  background-color: #0A2F5A; /* azul escuro */
+  color: white;
   padding: 40px 20px;
-  background-color: white; /* ou #f9f9f9 */
 }
 
-.depoimento {
-  background: #fff;
-  border-radius: 10px;
+.testimonial-box {
+  background-color: #123D70; /* tom mais claro para destacar */
   padding: 20px;
-  max-width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  font-family: 'Open Sans', sans-serif;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.estrelas {
-  color: #f5c518; /* amarelo das estrelas */
-  font-size: 20px;
-  margin-bottom: 10px;
+.testimonial-box p {
+  margin: 10px 0;
 }
 
-.estrelas strong {
-  color: #0A2F5A;
-  font-size: 16px;
-  margin-left: 5px;
+.testimonial-box .rating {
+  font-weight: bold;
+  font-size: 18px;
 }
 
-.texto {
-  font-size: 16px;
-  color: #0A2F5A;
-  margin-bottom: 15px;
-}
-
-.autor {
-  font-size: 14px;
+.testimonial-box .author {
   font-style: italic;
-  color: #0A2F5A;
+  font-size: 16px;
+  color: #D1D1D1;
 }
+
