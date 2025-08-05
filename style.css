@@ -80,20 +80,43 @@ form input, form button {
     flex: 1;
 }
 .depoimentos {
-    background-color: #0A2F5A;
-    color: white;
-    padding: 2em;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: white; /* ou #f9f9f9 */
 }
-.comentarios {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-top: 1em;
+
+.depoimento {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Open Sans', sans-serif;
 }
-.comentario {
-    background-color: white;
-    color: #0A2F5A;
-    padding: 1em;
-    border-radius: 5px;
+
+.estrelas {
+  color: #f5c518; /* amarelo das estrelas */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.estrelas strong {
+  color: #0A2F5A;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.texto {
+  font-size: 16px;
+  color: #0A2F5A;
+  margin-bottom: 15px;
+}
+
+.autor {
+  font-size: 14px;
+  font-style: italic;
+  color: #0A2F5A;
 }
