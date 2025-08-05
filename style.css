@@ -1,190 +1,99 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #0a2f5a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-
 header {
-  background-color: #f4f4f4;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #0A2F5A;
 }
-
-header h1 {
-  color: #0a2f5a;
+header .logo {
+    height: 60px;
 }
-
 nav ul {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
+    list-style: none;
+    display: flex;
+    gap: 1em;
 }
-
 nav ul li a {
-  text-decoration: none;
-  color: #0a2f5a;
-  font-weight: 600;
-  transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
-
-nav ul li a:hover {
-  color: #a6a6a6;
-}
-
-.hero-banner {
-  position: relative;
-  background-image: url("maos-no-volante-ao-dirigir-em-alta-velocidade-de-dentro-carro.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f4f4f4;
-  text-align: center;
-}
-
-.hero-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(10, 47, 90, 0.75);
-}
-
-.hero-banner .content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-banner h2 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-banner p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero-banner a {
-  background-color: #ff7f50;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 3rem 2rem;
-  background-color: #ffffff;
-  gap: 2rem;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 3em 1em;
 }
-
-.hero-text {
-  flex: 1;
-  color: #0a2f5a;
+.hero h1 {
+    font-size: 2em;
 }
-
-.hero-form {
-  flex: 1;
-  background-color: #a6a6a6;
-  padding: 2rem;
-  border-radius: 12px;
+.hero .botao {
+    background-color: #0A2F5A;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
-
-.hero-form form {
-  display: flex;
-  flex-direction: column;
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
 }
-
-.hero-form label {
-  margin-top: 1rem;
-  margin-bottom: 0.3rem;
-  font-weight: bold;
+.form-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 2em;
 }
-
-.hero-form input,
-.hero-form select {
-  padding: 0.6rem;
-  border: none;
-  border-radius: 6px;
+.form-texto {
+    flex: 1;
+    text-align: center;
 }
-
-.hero-form button {
-  margin-top: 1.5rem;
-  padding: 0.8rem;
-  background-color: #0a2f5a;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
-
-.benefits,
-.bbs-benefits,
-.testimonials {
-  padding: 3rem 2rem;
-  background-color: #f4f4f4;
-  text-align: center;
+form input, form button {
+    padding: 1em;
+    font-size: 1em;
 }
-
-.benefits {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
+.coberturas {
+    background-color: #d1d1d1;
+    padding: 2em;
 }
-
-.benefit-card {
-  width: 150px;
+.coberturas-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
 }
-
-.benefit-card img {
-  width: 80px;
-  margin-bottom: 0.5rem;
+.coluna {
+    flex: 1;
 }
-
-.bbs-benefits h2 {
-  font-family: 'DM Serif Display', serif;
-  margin-bottom: 1rem;
+.depoimentos {
+    background-color: #0A2F5A;
+    color: white;
+    padding: 2em;
+    text-align: center;
 }
-
-.bbs-benefits ul {
-  list-style: none;
-  padding: 0;
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 1em;
 }
-
-.bbs-benefits li {
-  margin-bottom: 0.8rem;
+.comentario {
+    background-color: white;
+    color: #0A2F5A;
+    padding: 1em;
+    border-radius: 5px;
 }
-
-.testimonials h2 {
-  font-family: 'DM Serif Display', serif;
-  margin-bottom: 2rem;
-}
-
-.testimonial {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-left: 4px solid #0a2f5a;
-  margin-bottom: 1rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
