@@ -12,7 +12,8 @@ header {
     background-color: #0A2F5A;
 }
 header .logo {
-    height: 60px;
+    width: 180px;
+  height: auto;
 }
 nav ul {
     list-style: none;
